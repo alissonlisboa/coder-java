@@ -12,6 +12,8 @@ public class Car {
 
     public void speedUp() {
         currentSpeed += this.acceleration;
+        if (currentSpeed > MAX_SPEED)
+            currentSpeed = MAX_SPEED;
     }
 
     public void brake() {
